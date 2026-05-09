@@ -17,7 +17,6 @@ import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { FileNode } from "@/types/repo";
 import { fetchFileContent } from "@/lib/github";
 import { toast } from "sonner";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 const Index = () => {
   const [recentRepos, setRecentRepos] = useLocalStorage<string[]>("repolens-recent", []);
@@ -77,25 +76,22 @@ const Index = () => {
             </div>
             <span className="gradient-text font-extrabold tracking-tight">RepoLens</span>
           </button>
-          <div className="flex items-center gap-2">
-            {showResults && (
-              <motion.div
-                initial={{ opacity: 0, x: 10 }}
-                animate={{ opacity: 1, x: 0 }}
+          {showResults && (
+            <motion.div
+              initial={{ opacity: 0, x: 10 }}
+              animate={{ opacity: 1, x: 0 }}
+            >
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={handleBack}
+                className="text-muted-foreground hover:text-primary border border-border/30 hover:border-primary/30 transition-all duration-300"
               >
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={handleBack}
-                  className="text-muted-foreground hover:text-primary border border-border/30 hover:border-primary/30 transition-all duration-300"
-                >
-                  <ArrowLeft className="w-4 h-4 mr-1.5" />
-                  New Analysis
-                </Button>
-              </motion.div>
-            )}
-            <ThemeToggle />
-          </div>
+                <ArrowLeft className="w-4 h-4 mr-1.5" />
+                New Analysis
+              </Button>
+            </motion.div>
+          )}
         </div>
       </header>
 

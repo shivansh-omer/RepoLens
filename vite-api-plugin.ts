@@ -54,15 +54,15 @@ export function apiPlugin(): Plugin {
                         try {
                             // Dynamically import the handlers we created
                             if (urlPath === '/api/analyze') {
-                                // @ts-expect-error: ignore dynamic import
+                                // @ts-ignore: ignore dynamic import
                                 const handler = (await import('./api/analyze.js')).default;
                                 await handler(req, res);
                             } else if (urlPath === '/api/explain') {
-                                // @ts-expect-error: ignore dynamic import
+                                // @ts-ignore: ignore dynamic import
                                 const handler = (await import('./api/explain.js')).default;
                                 await handler(req, res);
                             } else if (urlPath === '/api/github') {
-                                // @ts-expect-error: ignore dynamic import
+                                // @ts-ignore: ignore dynamic import
                                 const handler = (await import('./api/github.js')).default;
                                 await handler(req, res);
                             } else {

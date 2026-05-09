@@ -67,7 +67,7 @@ This project is optimized for deployment on Vercel.
 4. Deploy! Vercel will automatically configure the serverless backend (from the `api/` directory) and handle the SPA routing.
 
 ## 👨‍💻 Developer
-Developed by Sumit / Shivansh.
+Developed by Shivansh Omer.
 
 ---
 *Built with React, Vite, and Gemini AI.*

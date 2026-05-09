@@ -2,7 +2,7 @@ can# 📄 RepoLens AI — Ideation Document
 
 > **Version:** 1.0  
 > **Date:** March 2025  
-> **Author:** Sumit  (B.Tech 3rd Year, CSE)  
+> **Author:** Shivansh Omer (B.Tech 3rd Year, CSE)  
 > **Status:** Approved & Implemented
 
 ---
@@ -184,4 +184,4 @@ This project demonstrates proficiency in:
 
 ---
 
-*Document maintained by Sumit . Last updated: March 2025.*
+*Document maintained by Shivansh Omer. Last updated: March 2025.*
